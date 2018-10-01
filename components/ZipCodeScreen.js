@@ -1,4 +1,4 @@
-import { StyleSheet, FlatList, View, Text,TouchableHighlight, } from 'react-native';
+import { StyleSheet, FlatList, View, Text,TouchableHighlight,ImageBackground } from 'react-native';
 import React from 'react';
     
 
@@ -33,14 +33,14 @@ export default class ZipCodeScreen extends React.Component {
         const { navigate } = this.props.navigation;
         return (
             <View>
-                
+                <ImageBackground source={require('../2.jpeg')} style={styles.backdrop}>
                     <View style={styles.back}>
                         <View style={styles.pad}>
                             <FlatList data={availableZipItems} keyExtractor={_keyExtractor} 
                             renderItem={({item}) => <ZipItem {...item} navigate={navigate}/>}/>
                         </View>
                     </View>    
-                
+                </ImageBackground>
             </View>
         );
     }
