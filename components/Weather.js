@@ -70,6 +70,6 @@ const styles = StyleSheet.create({
        },
 
     pad: { 
-        paddingTop: 130
+        paddingTop: 0
     },
 });

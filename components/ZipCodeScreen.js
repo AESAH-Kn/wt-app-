@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     backdrop: { width: '100%', height: '100%'},
 
     pad: { 
-        paddingTop: 110
+        paddingTop: 0
     },
 
     zipItem: {
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },
     zipCode: {
         textAlign:'right', 
-        color:'red', 
+        color:'black', 
         fontSize: 30 ,
         paddingRight: 30 ,
     },
